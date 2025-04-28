@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="149" viewBox="0 0 150 149">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#AI_GaussianBlur_4);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #e9f3fd;
+      }
+
+      .cls-4 {
+        fill: #f4b0b0;
+      }
+    </style>
+    <filter id="AI_GaussianBlur_4" name="AI_GaussianBlur_4">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <g id="play_button">
+    <g class="cls-1">
+      <ellipse class="cls-2" cx="78.6" cy="74.54" rx="59.66" ry="62.12" transform="translate(-2.94 3.23) rotate(-2.31)"/>
+    </g>
+    <circle class="cls-3" cx="67.51" cy="71.61" r="59.75"/>
+    <path class="cls-4" d="M53.86,91.42V52A5.45,5.45,0,0,1,62,47.28L96.17,67a5.46,5.46,0,0,1,0,9.46L62,96.14A5.45,5.45,0,0,1,53.86,91.42Z"/>
+  </g>
+</svg>

@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+ul {
+    width: 75vw;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+li {
+    margin-right: 25px
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    font-family: 'Dosis', sans-serif;
+}
+p {font-family: 'Dosis', sans-serif;font-size: 1.1vw; width: 35vw; text-align: center; top: 3vw;left: 2vw; top}
+
+main {
+    display: grid;
+    grid-template-areas: "game info";
+    grid-gap: 6.5%;
+    grid-template-columns: 75% 1fr;
+}
+
+#screen {
+    position: relative;
+    margin-left: 25px;
+    grid-area: game;
+    width: 76vw;
+    height: 42.75vw;
+  
+}
+#game {
+    width: 100%;
+    height: 100%;
+}
+aside {
+    grid-area: info;
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {font-size: 1.3vw; padding: 0; margin: 0}
+h2{font-size: 1vw;}
+
+#game_background{ position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/background.svg);
+    background-size: 100%;}
+
+#game_over{ position: absolute; top: 0; width: 100%;
+    height: 100%;
+    background-image: url(assets/lost_game.svg);
+    background-size: 100%;}
+#level_complete {position: absolute; top: 0; width: 100%;
+    height: 100%;
+    background-image: url(assets/won_game.svg);
+    background-size: 100%;}
+
+#title_screen{position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/start_screen.svg);
+    background-size: 100%;}
+
+#start_game{position: absolute;
+    left: 35vw;
+    top: 22.5vw;
+    width: 6vw;
+    height: 5.9vw;
+    background-image: url(assets/button_start.svg);
+    background-size: 100%;}
+
+#instructions {position: absolute;width:40.2vw;height:19vw ; top: 12vw;left: 19vw ; background-image: url(assets/instruction_screen.svg); background-size: 100%;}
+
+#bear { top: 17vw; left: 1vw;
+    position: absolute;
+    width: 17.81vw;
+    height: 17.81vw;
+    background-image: url(assets/bear.svg);
+    background-size: 100%
+}
+
+
+#sad_bear {top: 0; left: 0vw;
+    position: absolute;
+    width: 17.81vw;
+    height: 17.81vw;
+    background-image: url(assets/bear_sad.svg);
+    background-size: 100%}
+
+#happy_bear {top: 0; left: 0vw;
+    position: absolute;
+    width: 17.81vw;
+    height: 17.81vw;
+    background-image: url(assets/happy_bear.svg);
+    background-size: 100%}
+
+
+#fish_sprite1 {
+    position: absolute;
+    width: 7.32vw;
+    height: 4.35vw;
+    background-image: url(assets/fish.svg);
+    ; background-size: 100%
+}
+#a_container1{position: absolute;}
+#a_container2{position: absolute; }
+#a_container3{position: absolute;}
+#a_container4{position: absolute; }
+
+
+/*ICEHOLES POSITIONS*/
+.position1 {
+    left:22.4vw;
+    top: 35vw;
+}
+
+.position2 {
+    left: 38.1vw;
+    top: 36.9vw
+}
+
+.position3 {
+    top: 37vw;
+    left: 54vw
+}
+
+.position4 {top: 30.95vw;
+    left: 34vw;
+    
+}
+
+.position5 { top: 30.8vw;
+    left: 48.5vw}
+
+.position6 {  top: 32.3vw;
+    left: 63.5vw;}
+
+
+
+
+#trash_sprite1 {
+    position: absolute;
+    width: 7.32vw;
+    height: 4.35vw;
+    background-image: url(assets/bottle.svg);
+   ; background-size: 100%
+}
+
+#fish_sprite2{
+    position: absolute;
+    width: 7.32vw;
+    height: 4.35vw;
+    background-image: url(assets/fish2.svg);
+    background-size: 100%
+}
+
+#trash_sprite2 {
+    position: absolute;
+   width: 7.32vw;
+    height: 4.35vw;
+    background-image: url(assets/shoe.svg);
+    background-size: 100%
+}
+
+#point_indicator {
+    position: absolute;
+    width: 7.32vw;
+    height: 4.35vw;
+    background-image: url(assets/point_indicator.svg);
+    background-size: 100%
+}
+#points {
+     position: absolute;
+    height: 10%; width: 28%; top: 1vw;
+    font-family: 'Dosis', sans-serif; color: white;font-weight:bold; font-size:1.6vw ; text-align: center; align-content: center; margin: auto}
+
+.position7 {
+    left:2vw;
+    top: 0.6vw
+}
+
+#clock {
+    position: absolute;
+    width: 7.32vw;
+    height: 4.35vw;
+    background-image: url(assets/clock.svg);
+    background-size: 100%
+}
+
+.position8{ right: 0.1vw; top: 0.55vw}
+
+#time_left {position: absolute;top: 1.2vw;left: 0.1vw;
+    width:100%;
+    height: 20%;
+    font-family: 'Dosis', sans-serif; color: white;font-weight:bold; font-size:1.6vw ; text-align: center; align-content: center; margin: auto;}
+
+
+
+
+#health_indicator {
+  
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 0.9vw;
+    right: 7vw;
+    width: 12vw;
+    height: 3.6vw;
+    padding: .2vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.position8 {
+   
+}
+
+.full_heart {
+
+    width: 3.76vw;
+    height: 3.36vw;
+    background-image: url(assets/full_heart.svg);
+    background-size:100%
+}
+
+.empty_heart{width: 3.76vw;
+    height: 3.36vw;
+    background-image: url(assets/empty_heart.svg);
+    background-size:100%}
+
+#back_to_start {
+    position: absolute; 
+    width: 3.95vw;
+    height: 3.95vw;
+    background-image: url(assets/button_restart.svg);
+    background-size: 100%
+}
+
+.playagain {position: absolute; left: 37vw; top: 25vw;
+    width: 12.6vw;
+    height: 4vw;
+    background-image: url(assets/button_play_again.svg);
+    background-size: 100%}
+
+#fish_won_game{position: absolute; left: 29.5vw; top: 22.3vw;
+    width: 4.75vw;
+    height: 3.8vw;
+    background-image: url(assets/won_game_fish.svg);
+    background-size: 100%}
+
+
+.position9 {
+    top: 38vw;
+    left: 1vw
+}
+
+#pause {position: absolute ;top: 38vw; left:1vw;
+    width: 3.95vw;
+    height: 3.95vw;
+    background-image: url(assets/pause.svg);
+    background-size:100%}
+
+#play{position: absolute ;top: 38vw; left:1vw;
+    width: 3.95vw;
+    height: 3.95vw;
+    background-image: url(assets/start.svg);
+    background-size:100%}
+
+
+
+#mute {
+    position: absolute; top: 38vw;
+    left: 5vw;
+    width: 3.95vw;
+    height: 3.95vw;
+    background-image: url(assets/button_mute.svg);
+    background-size:100%
+}
+
+#unmute{ position: absolute; top: 38vw;
+    left: 5vw;
+    width: 3.95vw;
+    height: 3.95vw;
+    background-image: url(assets/button_unmute.svg);
+    background-size:100%}
+
+#question_mark { position: absolute;
+    width: 3.95vw;
+    height: 3.95vw;
+    background-image: url(assets/question_mark.svg);
+    background-size:100%}
+
+
+.position10{top:26vw;right:-16vw;}
+.position11 { top: 38vw; left: 9vw}
+.position12{top:38vw; right: 1vw;  position: absolute; 
+    width: 3.95vw;
+    height: 3.95vw;
+    background-image: url(assets/button_restart.svg);
+    background-size: 100%}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+
+.fade_out {
+    opacity: 100%;
+    animation: fade_out 0.1s;
+    animation-fill-mode: forwards;
+} 
+
+@keyframes fade_out {
+    to {
+        opacity: 0;
+    }
+}
+
+
+.disappear{opacity: 100%;
+animation:disappear ; animation-fill-mode: forwards; animation-delay:4s }
+
+@keyframes disappear { to {opacity: 0;}
+    
+    
+}
+
+
+.fade_in {
+    opacity: 0%;
+    animation: fade_in ;
+    animation-fill-mode: forwards;  animation-duration: 3s
+}
+
+
+
+@keyframes fade_in {
+    0%{opacity:10%;
+    }
+  
+    50% {opacity: 100%}
+    100% {opacity: 0}
+}
+
+.fade_in2 {
+    opacity: 0%;
+    animation: fade_in 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fade_in2 {
+    0%{opacity:0;
+    }
+   50% {opacity: 100%}
+    100% {opacity: 0}
+}
+
+.fade_in3 {
+    opacity: 0%;
+    animation: fade_in 3s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fade_in3 {
+   0%{opacity:0;
+    }
+   50% {opacity: 100%}
+    100% {opacity: 0}
+    
+}.fade_in4 {
+    opacity: 0%;
+    animation: fade_in 3s;
+    animation-fill-mode: forwards; 
+}
+@keyframes fade_in4 {
+    0%{opacity:0;
+    }
+   50% {opacity: 100%}
+    100% {opacity: 0}
+}
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(0.9, 0.9);
+    }
+}
+
+
+.shake {
+  animation: shake 0.82s 
+  ; animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {transform: rotate(10deg)}
+    20% {transform: rotate(5deg)}
+    50% {transform: rotate(0deg)}
+    70%{transform: rotate(5deg)}
+    100% {transform: rotate(10deg)}
+ 
+
+}
+
+
+
+
+
+
+.stop {
+    animation-play-state: paused;
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+footer {position: relative;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1vw;
+    height: 100px;
+    width: 100vw;
+    background-color: white;
+    bottom: 0;
+    padding: 24px
+}

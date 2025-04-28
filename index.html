@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>Fisherbear</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li> <a href="assets.html"> Assets </a> </li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="screen">
+            <div id="game">
+                <div id="game_background">
+                    <div id="bear">
+                        <div id="sad_bear" class="hidden"></div>
+                        <div id="happy_bear" class="hidden"></div>
+
+                    </div>
+                    <div id="a_container1" class="">
+                        <div id="fish_sprite1" class="  "> </div>
+                    </div>
+                    <div id="a_container2" class="">
+                        <div id="fish_sprite2" class=" "> </div>
+                    </div>
+                    <div id="a_container3" class="">
+                        <div id="trash_sprite1" class="  "> </div>
+                    </div>
+                    <div id="a_container4">
+                        <div id="trash_sprite2" class="   "> </div>
+                    </div>
+
+                    <div id=UI_elements>
+                        <div id="point_indicator" class="position7">
+
+                            <div id="points" class=" position7">0</div>
+                        </div>
+                        <div id="clock" class="position8">
+                            <div id="time_left" class="">30</div>
+                        </div>
+
+
+
+                        <div id="health_indicator">
+                            <div id="life3" class=full_heart></div>
+
+                            <div id="life2" class=full_heart> </div>
+                            <div id="life1" class=full_heart></div>
+
+                        </div>
+
+
+                        <div id="pause" class=""></div>
+                        <div id="play" class="hidden"></div>
+
+
+
+
+                        <div id="mute" class=""> </div>
+
+                        <div id="unmute" class="hidden">
+                        </div>
+
+                        <div id="question_mark" class="position11"> </div>
+                    </div>
+                    <audio id="fishSound" src="sounds/click.mp3"></audio>
+                    <audio id="trashSound" src="sounds/failure.mp3"></audio>
+
+                    <audio id="buttonClick" src="sounds/button.mp3"></audio>
+                    <audio id="BackgroundMusic" src="sounds/BackgroundMusic.mp3"></audio>
+
+                </div>
+
+
+
+                <div id="title_screen" class="hidden">
+                    <div id="start_game"> </div>
+                </div>
+
+
+
+                <div id="instructions" class="hidden">
+                    <div id="back_to_start" class="position10"></div>
+                </div>
+                <div id="game_over" class="hidden">
+
+                    <audio id="GameOverSound" src="sounds/gameover.mp3"></audio>
+
+                    <div id="play_again" class="playagain">
+                    </div>
+
+                    <div id="back_to_start2" class="position12"></div>
+                </div>
+
+
+                <div id="level_complete" class="hidden">
+
+                    <audio id="LevelCompleteSound" src="sounds/levelcomplete.mp3"></audio>
+
+                    <div id="play_again2" class="playagain">
+                    </div>
+
+                    <div id="fish_won_game"> </div>
+                    <div id="back_to_start3" class="position12"></div>
+
+                </div>
+            </div>
+        </section>
+        <aside>
+            <h1>Play the Fisherbear and help Bruno catch his dinner!</h1>
+            <h2>Click on fish and collect 15 of them before you run out of time (30 seconds). <br>Avoid poisonous items- clicking on the plastic bottle or shoe results in losing 1 of 3 lives.
+
+            </h2>
+
+        </aside>
+    </main>
+    <footer> Julia Lendzion, KEA, Multimedia Design & Communication <br>
+        Basic Animation, November 2020
+    </footer>
+    <script src=game.js></script>
+</body></html>

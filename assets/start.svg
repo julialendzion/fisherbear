@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.79;
+        filter: url(#AI_GaussianBlur_4);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #f4b0b0;
+      }
+    </style>
+    <filter id="AI_GaussianBlur_4" name="AI_GaussianBlur_4">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+  <g id="start">
+    <g id="shadow-2" data-name="shadow" class="cls-1">
+      <circle class="cls-2" cx="49.8" cy="49.8" r="39"/>
+    </g>
+    <circle id="kolo" class="cls-2" cx="41.91" cy="50.26" r="38.54"/>
+    <path class="cls-3" d="M28.39,68.91V31.06A2.37,2.37,0,0,1,32,29L64.73,47.93a2.37,2.37,0,0,1,0,4.11L32,71A2.37,2.37,0,0,1,28.39,68.91Z"/>
+  </g>
+</svg>

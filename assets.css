@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+
+ul {
+    width: 75vw;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+}
+
+li {
+    margin-right: 25px
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    font-family: 'Dosis', sans-serif;
+}
+
+img{max-width: 100%; margin-top: 50px}
+body {background-color: #F2F7FC}
+
+figcaption {font-family: 'Dosis', sans-serif; font-size: 1.2vw}
